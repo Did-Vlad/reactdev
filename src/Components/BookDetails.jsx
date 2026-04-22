@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 const BookDetails = ({ items }) => {
   const { id } = useParams();
-  const book = items.find((item) => item.id === Number(id)); //Poshuk knygi za id 
+  const book = items.find((item) => item.id === Number(id));
 
     if (!book) {
         return (
