@@ -6,6 +6,7 @@ import Main from "./Components/Main";
 import HomePage from "./Components/HomePage";
 import CatalogPage from "./Components/CatalogPage";
 import BookDetails from "./Components/BookDetails";
+import Contact from "./Components/Contact";
 
 function App() {
   const [CardCount, setCardCount] = useState(0);
@@ -35,6 +36,7 @@ return (
   <Route path="/main" element={<Main items={books} />} />
   <Route path="/catalog" element={<CatalogPage items={books} onBuy={handeBuyClick} />} />
   <Route path="/book/:id" element={<BookDetails items={books} />} />
+  <Route path="/contact" element={<Contact />} />
   </Routes>
 
         <Footer />
